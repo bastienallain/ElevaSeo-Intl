@@ -1,18 +1,34 @@
-import { nextui } from "@nextui-org/react";
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
-  content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./src/**/*.{tsx,css}'],
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ['Inter', 'sans-serif'],
+      mono: [
+        'Monaco',
+        'ui-monospace',
+        'SFMono-Regular',
+        'Menlo',
+        'Consolas',
+        'Liberation Mono',
+        'Courier New',
+        'monospace'
+      ]
+    },
+    container: {
+      center: true,
+      screens: {
+        sm: '50rem'
+      }
+    },
+    extend: {
+      colors: {
+        slate: {
+          850: 'hsl(222deg 47% 16%)'
+        },
+        primary: '#5fc3e7'
+      }
+    }
   },
-  darkMode: "class",
-  plugins: [nextui()]
-}
+  plugins: []
+};
