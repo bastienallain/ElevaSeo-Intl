@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale, getTranslations } from "next-intl/server";

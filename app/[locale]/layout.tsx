@@ -1,14 +1,11 @@
 import { ReactNode } from "react";
 import { unstable_setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { Inter } from "next/font/google";
 
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 import { locales } from "@/config/config";
-
-const inter = Inter({ subsets: ["latin"] });
 
 type Props = {
   children: ReactNode;
