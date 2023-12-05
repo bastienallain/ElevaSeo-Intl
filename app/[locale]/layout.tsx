@@ -3,7 +3,7 @@ import { unstable_setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Inter } from "next/font/google";
 
-import Navbar from "@/components/navbar";
+import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 import { locales } from "@/config/config";
@@ -31,7 +31,7 @@ export default async function LocaleLayout({
 
   return (
     <div className="relative flex flex-col h-screen">
-      <Navbar />
+      <Navigation />
       <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
         {children}
       </main>
