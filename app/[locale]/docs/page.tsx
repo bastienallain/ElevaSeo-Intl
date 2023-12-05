@@ -14,7 +14,8 @@ export async function generateMetadata({
   const description = t("description");
 
   return {
-    title, description
+    title,
+    description,
   };
 }
 
