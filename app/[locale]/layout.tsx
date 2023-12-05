@@ -1,11 +1,13 @@
 import { ReactNode } from "react";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 
-import Navigation from "@/components/Navigation";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 import { locales } from "@/config/config";
+
+import { Providers } from "./providers";
 
 type Props = {
   children: ReactNode;
@@ -20,19 +22,28 @@ export default async function LocaleLayout({
   children,
   params: { locale },
 }: Props) {
-  // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) notFound();
-
-  // Enable static rendering
-  unstable_setRequestLocale(locale);
+  let messages;
+  try {
+    messages = (await import(`@/messages/${locale}.json`)).default;
+  } catch (error) {
+    notFound();
+  }
 
   return (
-    <div className="relative flex flex-col h-screen">
-      <Navigation />
-      <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
-        {children}
-      </main>
-      <Footer />
-    </div>
+    <html lang={locale}>
+      <body>
+        <NextIntlClientProvider messages={messages}>
+          <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+            <div className="relative flex flex-col h-screen">
+              <Navbar />
+              <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+                {children}
+              </main>
+              <Footer />
+            </div>
+          </Providers>
+        </NextIntlClientProvider>
+      </body>
+    </html>
   );
 }
