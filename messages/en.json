@@ -1,5 +1,54 @@
 {
-  "Index": {
-    "title": "Hello world!"
+  "IndexPage": {
+    "title": "Home",
+    "description": "This is Home page.",
+    "content": "<p>This is <code>Home</code> page.</p>"
+  },
+  "DocsPage": {
+    "title": "Docs",
+    "description": "This is Docs page.",
+    "content": "<p>This is <code>Docs</code> page.</p>"
+  },
+  "PricingPage": {
+    "title": "Pricing",
+    "description": "This is Pricing page.",
+    "content": "<p>This is <code>Pricing</code> page.</p>"
+  },
+  "BlogPage": {
+    "title": "Blog",
+    "description": "This is Blog page.",
+    "content": "<p>This is <code>Blog</code> page.</p>"
+  },
+  "AboutPage": {
+    "title": "About",
+    "description": "This is About page.",
+    "content": "<p>This <code>About</code> page.</p>"
+  },
+  "Error": {
+    "title": "Something went wrong!",
+    "description": "This is Error page.",
+    "content": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>"
+  },
+  "NotFoundPage": {
+    "title": "Page not found",
+    "description": "This is NotFoundPage page.",
+    "content": "Please double-check the browser address bar or use the navigation to go to a known page."
+  },
+  "LocaleLayout": {
+    "title": "Elevaseo-intl"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, fr {French} en {English} other {Unknown}}"
+  },
+  "Navigation": {
+    "home": "Home",
+    "docs": "Docs",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "about": "About"
+  },
+  "Footer": {
+    "title": "Powered by"
   }
 }

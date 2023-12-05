@@ -1,19 +1,19 @@
 module.exports = {
   env: {
-    node: true
+    node: true,
   },
   extends: [
-    'molindo/typescript',
-    'molindo/react',
-    'molindo/tailwind',
-    'plugin:@next/next/recommended'
+    "molindo/typescript",
+    "molindo/react",
+    "molindo/tailwind",
+    "plugin:@next/next/recommended",
   ],
   overrides: [
     {
-      files: ['*.spec.tsx'],
+      files: ["*.spec.tsx"],
       rules: {
-        'import/no-extraneous-dependencies': 'off'
-      }
-    }
-  ]
+        "import/no-extraneous-dependencies": "off",
+      },
+    },
+  ],
 };

@@ -1,5 +1,54 @@
 {
-  "Index": {
-    "title": "Bonjour world!"
+  "IndexPage": {
+    "title": "D'accueil",
+    "description": "Ceci est la page d'accueil.",
+    "content": "<p>Ceci est la page <code>d'accueil</code>.</p>"
+  },
+  "DocsPage": {
+    "title": "Documents",
+    "description": "Ceci est la page Documents.",
+    "content": "<p>Ceci est la page <code>Documents</code>.</p>"
+  },
+  "PricingPage": {
+    "title": "De tarification",
+    "description": "Ceci est la page de tarification.",
+    "content": "<p>Ceci est la page <code>de tarification</code>.</p>"
+  },
+  "BlogPage": {
+    "title": "Du blog",
+    "description": "Ceci est la page du blog.",
+    "content": "<p>Ceci est la page <code>du blog</code>.</p>"
+  },
+  "AboutPage": {
+    "title": "À propos",
+    "description": "Ceci est la page à propos.",
+    "content": "<p>Ceci est la page <code>à propos</code>.</p>"
+  },
+  "Error": {
+    "title": "Quelque chose s'est mal passé!",
+    "description": "Ceci est la page d'erreur.",
+    "content": "<p>Nous avons malheureusement rencontré une erreur.</p><p>Vous pouvez essayer de <retry>recharger la page</retry> que vous visitiez.</p>"
+  },
+  "NotFoundPage": {
+    "title": "Page non trouvée",
+    "description": "Ceci est la page Page introuvable.",
+    "content": "Veuillez vérifier la barre d'adresse du navigateur ou utiliser la navigation pour accéder à une page connue."
+  },
+  "LocaleLayout": {
+    "title": "Elevaseo-intl"
+  },
+  "LocaleSwitcher": {
+    "label": "Changer de langue",
+    "locale": "{locale, select, fr {Français} en {Anglais} other {Inconnu}}"
+  },
+  "Navigation": {
+    "home": "D'accueil",
+    "docs": "Documents",
+    "pricing": "De tarification",
+    "blog": "Du blog",
+    "about": "À propos"
+  },
+  "Footer": {
+    "title": "Alimenté par"
   }
 }
